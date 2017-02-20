@@ -1,0 +1,61 @@
+
+<div class="main" >
+
+    <div class="form-page">
+    <form class="form" name="createForm" novalidate ng-submit="createBuilding()">
+
+        <div class="form-group">
+            <label for="">Nume</label>
+            <input name="name" ng-model="newBuilding.buildingName" required />
+        </div>
+
+        <div class="form-group">
+            <label for="">Adresa</label>
+            <input name="address" ng-model="newBuilding.buildingAddress" required />
+        </div>
+
+        <div class="form-group">
+            <label for="">Descriere</label>
+            <input name="description" ng-model="newBuilding.buildingDescription" required />
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Adauga Cladire</button>
+        </div>
+    </form>
+    </div>
+    <div class="form-page">
+    <form class="form-id" name="getOneForm" novalidate ng-submit="getById()">
+
+        <div class="form-group-id">
+            <label for="">Id cladire</label>
+            <input name="myid" ng-model="myId" required />
+        </div>
+
+        <div class="form-group-id">
+            <button class="btn btn-primary" type="submit">Cauta dupa id</button>
+        </div>
+    </form>
+    </div>
+    <p> Cladire dupa id:{{oneBuilding}}</p>
+
+    <form class="form-all" name="getOneForm" novalidate ng-submit="getAll()">
+
+        <div class="form-group-all">
+            <button class="btn btn-primary" type="submit">Toate Cladirile</button>
+        </div>
+    </form>
+
+
+    <div ng-repeat="building in buildings">
+        <div class="cladire">
+            <p>{{building.buildingName}}</p>
+            <p>{{building.buildingAddress}}</p>
+            <p>{{building.buildingDescription}}</p>
+        </div>
+    </div>
+
+
+
+
+</div>
