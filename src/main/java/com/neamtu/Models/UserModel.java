@@ -1,4 +1,4 @@
-package com.neamtu;
+package com.neamtu.Models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

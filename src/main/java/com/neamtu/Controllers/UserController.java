@@ -1,5 +1,7 @@
-package com.neamtu;
+package com.neamtu.Controllers;
 
+import com.neamtu.Models.UserModel;
+import com.neamtu.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +17,6 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/user")
 public class UserController {
-
 
     private UserRepository userRepository;
 

@@ -1,5 +1,6 @@
-package com.neamtu;
+package com.neamtu.Repositories;
 
+import com.neamtu.Models.BuildingModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

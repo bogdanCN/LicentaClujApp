@@ -1,5 +1,7 @@
-package com.neamtu;
+package com.neamtu.Controllers;
 
+import com.neamtu.Models.BuildingModel;
+import com.neamtu.Repositories.BuildingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

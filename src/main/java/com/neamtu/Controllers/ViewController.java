@@ -1,4 +1,4 @@
-package com.neamtu;
+package com.neamtu.Controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
